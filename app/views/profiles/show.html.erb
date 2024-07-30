@@ -1,0 +1,15 @@
+<!-- app/views/profiles/show.html.erb -->
+<div class="container">
+  <h2 class="mb-4">Profile</h2>
+  <%= link_to "Home", tweets_path, class: 'btn btn-secondary mb-4' %>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">User Information</h5>
+      <ul class="list-unstyled">
+        <li><strong>Name:</strong> <%= @user.name %></li>
+        <li><strong>Graveyard:</strong> <%= @user.graveyard %></li>
+        <li><strong>Email:</strong> <%= @user.email %></li>
+      </ul>
+    </div>
+  </div>
+</div>

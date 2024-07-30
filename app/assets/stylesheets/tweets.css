@@ -1,0 +1,16 @@
+ul{
+    list-style: none;    
+}
+
+.list-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group-item{
+    width: 300px;
+    flex: auto;
+    margin: 10px;    
+    box-sizing: border-box;
+}
