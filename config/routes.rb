@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     resources :tweets, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   end
 
+  get 'run_migrations', to: 'migrations#run'
+
   # Signup and login routes
   get 'signup', to: 'users#new'
   get 'login', to: 'sessions#new'
